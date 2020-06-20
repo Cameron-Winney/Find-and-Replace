@@ -46,7 +46,7 @@ replaceAllButton.addEventListener('click',function() {
         for(let cellLength = 0; cellLength < currentCell.length; cellLength++) {
             let string = currentCell[cellLength]
             
-            if(string.innerHTML.includes(finderInput)) {
+            while(string.innerHTML.includes(finderInput)) {
                 string.innerHTML = string.innerHTML.replace(finderInput, replacerInput)
             }
         }
